@@ -1,0 +1,14 @@
+{
+  "name": "pkmnapi",
+  "version": "1.0.0",
+  "description": "Using the pkmnapi and DOM to post pokemon to a website",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
