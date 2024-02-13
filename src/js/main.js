@@ -1,6 +1,6 @@
 "use strict";
 
-const url = "";
+const url = "https://pokeapi.co/api/v2/pokemon/";
 
 //hämta data
 async function fetchAPI() {

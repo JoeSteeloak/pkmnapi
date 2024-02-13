@@ -4,7 +4,7 @@
   "description": "Using the pkmnapi and DOM to post pokemon to a website",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel --open chrome",
     "build": "parcel build"
   },
   "author": "",
