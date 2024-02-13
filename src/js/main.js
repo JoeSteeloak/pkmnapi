@@ -1,6 +1,6 @@
 "use strict";
 let fetchedData = [];
-const url = "https://pokeapi.co/api/v2/pokemon/1/";
+const url = "https://pokeapi.co/api/v2/pokemon/";
 
 //hämta data
 async function fetchAPI() {
@@ -11,7 +11,7 @@ async function fetchAPI() {
         }
         const data = await response.json();
         //skicka data till array
-        fetchedData = data;
+        fetchedData = data.results;
     }
     catch (error) {
         document.getElementById("error").innerHTML = "<p>Något gick fel...</p>"
@@ -28,8 +28,8 @@ fetchAPI().then(() => {
 function displayData() {
     const pokeList = document.getElementById("poke");
     pokeList.innerHTML = "";
-    fetchedData.array.forEach((item) => {
-        pokeList.innerHTML += `<div class="pokemon">${item}</div>`
+    fetchedData.forEach((item) => {
+        pokeList.innerHTML += `<div class="pokemon">${item.name}</div>`
         
     });
 }
