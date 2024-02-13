@@ -2,13 +2,15 @@
   "name": "pkmnapi",
   "version": "1.0.0",
   "description": "Using the pkmnapi and DOM to post pokemon to a website",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    
+    "start": "parcel",
+    "build": "parcel build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.11.0"
-  }
+  },
+  "browserlist": ">0.5%, last 2 versions, not dead"
 }
