@@ -1,3 +1,7 @@
 node_modules/
 dist/
+<<<<<<< HEAD
 parcel_cache/
+=======
+.parcel-cache/
+>>>>>>> fcd73527107aa334333cd29c342a76ab8350e212
